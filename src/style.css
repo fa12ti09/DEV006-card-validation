@@ -1,0 +1,39 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: steelblue;
+    font-family:'Lato,sans-serif';
+}
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*--------Estilos Generales de las Tarjetas-----------*/
+
+.contenedorformulario {
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+background-color: cadetblue;
+}
+
+.btn-donar {
+   background-color: blue;
+
+
+
+}
