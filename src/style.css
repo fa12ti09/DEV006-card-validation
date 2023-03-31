@@ -29,11 +29,17 @@ body {
     flex-direction: column;
     align-items: center;
 background-color: cadetblue;
+font-size: 22px;
 }
 
 .btn-donar {
-   background-color: blue;
-
+   background-color: yellow;
+ font-size: 20px;
+ display: block;
+ padding: 0, 5rem 1rem;
+ width: 200px;
+ margin: 0 auto;
+ 
 
 
 }
