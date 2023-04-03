@@ -1,25 +1,30 @@
 *
 {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    /*estilo en la parte de arriba con la imagen y fondo */
+    padding: auto;
+    margin: auto;
+    text-align: center
+    ;
 }
 body {
-    background-color: steelblue;
+    background-color: white;
     font-family:'Lato,sans-serif';
 }
+/*Estilo del contenedor 1*/
 .contenedor {
-    width: 90%;
-    max-width: 1000px;
-    padding: 40px 20px;
+    width: 50px;
+    max-width: 500px;
+    padding: 45px 20px;
     margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: auto;
+    height: 598;
+    width: 398;
+    text-align: center;
 }
 
-/*--------Estilos Generales de las Tarjetas-----------*/
-
+/*Estilo del formulario */
 .contenedorformulario {
     width: 90%;
     max-width: 1000px;
@@ -28,17 +33,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-background-color: cadetblue;
+background-color: skyblue;
 font-size: 22px;
 }
-
+/*Estilo del boton "donar" */
 .btn-donar {
    background-color: yellow;
  font-size: 20px;
  display: block;
- padding: 0, 5rem 1rem;
+ padding: flex;
  width: 200px;
- margin: 0 auto;
+ margin: auto;
+ 
  
 
 

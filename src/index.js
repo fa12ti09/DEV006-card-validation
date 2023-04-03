@@ -1,10 +1,11 @@
 import validator from './validator.js'
-// numero tarjeta
+// boton donar
 const numeroTarjeta = document.getElementById('inputNumero')
 const btnSubmit = document.getElementById('btnsubmit')
 
 btnSubmit.addEventListener('click', function (event) {
   event.preventDefault()
+  // validacion del input numero de tarjeta
   const numTarjeta1 = numeroTarjeta.value;
 
   if (numTarjeta1.length < 13 || numTarjeta1.length > 19) {
@@ -12,7 +13,7 @@ btnSubmit.addEventListener('click', function (event) {
     return false;
   } 
   
-  //console.log('Validando Tarjeta')
+
   const luhn = validator.isValid(numeroTarjeta.value)
   const maskify = validator.maskify(numeroTarjeta.value)
   //alert(maskify) // Output: "#### #### #### 7454"
