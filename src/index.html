@@ -10,13 +10,11 @@
 </head>
 
 <body>
-
-  <header></header>
   <main>
     <h1>AYUDEMOS A LAS PERSONAS AFECTADAS POR LOS TERREMOTOS CON TU TARJETA BBVA </h1>
     <h1>Un acto de generosidad denota grandeza, puedes estar seguro que tu dinero será destinado para la causa que
       necesitamos.</h1>
-    <div class="contenedor">
+     <div class="contenedor"></div>
       <img src="./card/logoturquia_y_siria.jpg" alt="">
 
       <!--Formulario-->
@@ -25,26 +23,33 @@
           <div class="grupo">
             <label for="inputNumero">Numero Tarjeta</label>
             <input type="text" id="inputNumero" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"
-              maxlength="16" name="numero tarjeta" placeholder="Solo caracteres numericos" class="grupo" required
+              maxlength="19" name="numero tarjeta" placeholder="Solo caracteres numericos" class="grupo" required
               autocomplete="off">
 
 
           </div>
+
+          <!--Div de nombre-->
           <div class="Grupo">
             <label for="inputNombre">Nombre</label>
             <input type="text" id="inputNombre" maxlength="32" placeholder="Nombre + Apellido" autocomplete="off"
               required>
           </div>
+
+          <!--div de Aportación-->
           <div class="grupo">
             <label for="inputCantidad">Aportación Voluntaria</label>
             <input type="text" id="inputCantidad" maxlength="30" placeholder="ingrese la cantidad a donar"
               autocomplete="off" required>
           </div>
+
+          <!--Grupo Expiracion"-->
           <div class="flexbox">
             <div class="grupo Expiracion">
-              <label for="selecMes">Expiracion</label required>
+              <label for="selecMes" required>Expiracion</label>
+
+              <!--mes-->
               <div class="flexbox">
-                
                 <div class="grupo-select">
                   <select name="Mes" id="selecMes">
                     <option disabled selected>Mes</option>
@@ -62,6 +67,7 @@
                     <option value="12">12</option>
 
                   </select>
+                 <!--Año-->
                   <i class="fas fa-angle=down"></i>
                   <select name="Año" id="selecAño">
                     <option disabled selected>Año</option>
@@ -73,13 +79,17 @@
                     <option value="2024">2028</option>
                     <option value="2025">2029</option>
                   </select>
+                  <!--CVV-->
                   <i class="fas fa-angle=down"></i>
                   <div class="grupoCCV">
                     <label for="inputCVV">CVV</label>
                     <input type="text" id="inputCVV" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"
                       maxlength="3" required>
                   </div>
+                  <!--boton-->
                   <button id="btnsubmit" class="btn-donar">DONAR</button>
+
+
 
 
                 </div>
@@ -87,17 +97,18 @@
             </div>
           </div>
         </div>
-
+      </div>
   </main>
-  </div>
-  <footer></footer>
+  
+  <footer>
+
+  </footer>
+
+  
 
 
-
+  <script src="index.js" type="module">
   </script>
-
-
-  <script src="index.js" type="module"></script>
 
 </body>
 

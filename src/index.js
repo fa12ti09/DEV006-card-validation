@@ -5,7 +5,13 @@ const btnSubmit = document.getElementById('btnsubmit')
 
 btnSubmit.addEventListener('click', function (event) {
   event.preventDefault()
+  const numTarjeta1 = numeroTarjeta.value;
 
+  if (numTarjeta1.length < 13 || numTarjeta1.length > 19) {
+    alert('Tu tarjeta debe cumplir un rango de 13 a 19 digitos');
+    return false;
+  } 
+  
   //console.log('Validando Tarjeta')
   const luhn = validator.isValid(numeroTarjeta.value)
   const maskify = validator.maskify(numeroTarjeta.value)
@@ -18,6 +24,10 @@ btnSubmit.addEventListener('click', function (event) {
     alert('Tarjeta ' + maskify + ' Es Inválida')
     alert(' ERROR: Intente con otra tarjeta')
   }
+
+ 
+
+
 })
 
 //console.log(validator)
